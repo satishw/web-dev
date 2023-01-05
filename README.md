@@ -2,7 +2,7 @@
 Useful commands
 
 ## Apache Server
-Start/stop/restart the Apache web server
+Start/stop/restart/status the Apache web server
 ```
 sudo systemctl start httpd
 ```
@@ -11,6 +11,9 @@ sudo systemctl stop httpd
 ```
 ```
 sudo systemctl restart httpd
+```
+```
+sudo systemctl status httpd
 ```
 Use the systemctl command to configure the Apache web server to start at each system boot. 
 ```
@@ -54,7 +57,7 @@ sudo mysqldump -u<dbuser> -p'password' dbname > backupdb.sql
 ```
 sudo mysqldump --no-tablespaces -u<dbuser> -p'password' dbname > backupdb.sql
 ```
-Start/stop/restart the MariaDB server
+Start/stop/restart/status the MariaDB server
 ```
 sudo systemctl start mariadb
 ```
@@ -63,6 +66,9 @@ sudo systemctl stop mariadb
 ```
 ```
 sudo systemctl restart mariadb
+```
+```
+sudo systemctl status mariadb
 ```
 Enable MariaDB server to start at every boot
 ```
